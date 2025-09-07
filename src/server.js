@@ -20,7 +20,8 @@ const PORT = process.env.PORT || 1111;
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://video-on.vercel.app"
+    "https://video-on.vercel.app",
+    "https://video-on.vercel.app/"
   ],
   credentials: true,
 }));
