@@ -21,7 +21,6 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "https://video-on.vercel.app",
-    "https://video-on.vercel.app/"
   ],
   credentials: true,
 }));
