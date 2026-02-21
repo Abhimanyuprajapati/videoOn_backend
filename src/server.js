@@ -13,16 +13,10 @@ import cookieParser from 'cookie-parser'
 const app = express()
 const PORT = process.env.PORT || 1111;
 
-// app.use(cors({
-//   origin: "http://localhost:5173" "https://video-on.vercel.app/",
-//   credentials: true,
-// }));
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://video-on.vercel.app",
-    "https://video-hldh7o48d-abhimanyuprajapatis-projects.vercel.app",
-    "https://video-on-git-main-abhimanyuprajapatis-projects.vercel.app",
+    "https://video-on-frontend.vercel.app",
   ],
   credentials: true,
 }));
