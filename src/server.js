@@ -13,6 +13,9 @@ import cookieParser from 'cookie-parser'
 const app = express()
 const PORT = process.env.PORT || 1111;
 
+// connect to database
+connectDB();
+
 app.use(cors({
   origin: [
     "http://localhost:5173",
@@ -33,7 +36,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/chat", chatRoutes);
 
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
-  connectDB();
+
 })
